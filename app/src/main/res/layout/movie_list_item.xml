@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/movie_item"
+        app:cardElevation="0dp"
+        app:strokeColor="@android:color/transparent"
+        app:cardBackgroundColor="@color/background"
+        app:cardForegroundColor="@android:color/transparent"
+        app:strokeWidth="0dp"
+        app:rippleColor="@android:color/transparent"
+        android:layout_marginEnd="24dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/vote_average_shape"
+                    android:elevation="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_baseline_star_24" />
+
+                    <TextView
+                        android:id="@+id/value_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:text="8.7"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_item"
+                    android:layout_width="206dp"
+                    android:layout_height="294dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/test_movie_card"
+                    app:shapeAppearance="@style/ShapeAppearance.Rounded" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="start"
+                android:text="Esto pasa cuando empiezo a escribir texto como loco y no cabe en el text view"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:inputType="textMultiLine"
+                android:maxLength="180"
+                android:minLines="1"
+                android:maxLines="5"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
