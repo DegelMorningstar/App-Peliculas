@@ -15,6 +15,7 @@ Aplicacion Android Kotlin para visualizar una lista de peliculas.
 - `8`: Uso de LiveData
 - `9`: Uso de RecyclerView
 - `10`: Uso de Glide
+- `10`: Uso de DataBinding
 
 ## :pencil2:Diseño UX/UI
 Se realizo el diseño de interfaces en Figma
